@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video: Create Frame for Embedding Player</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form>
+      <label for="cloudname">Cloud Name:</label><br />
+      <input
+        type="text"
+        id="cloudname"
+        name="cloudname"
+        value="cloudinary"
+        size="100"
+      /><br /><br />
+      <label for="vidpublicid">Video Public Id:</label><br />
+      <input
+        type="text"
+        id="vidpublicid"
+        name="vidpublicid"
+        value="training/dam-internal-training/sales/dam-sales-1"
+        size="100"
+      /><br /><br />
+
+      <label for="captionurl">Caption URL:</label><br />
+      <input
+        type="text"
+        id="captionurl"
+        name="captionurl"
+        value="https://cloudinary-res.cloudinary.com/raw/upload/v1644340978/training/dam-internal-training/sales/dam-sales-1-captions.vtt"
+        size="100"
+      /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br /><br />
+    <textarea id="iframe" name="iframe" rows="14" cols="60"></textarea>
+    <br />
+    <button id="copybtn">Copy to Clipboard</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
